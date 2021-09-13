@@ -9,6 +9,8 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     background: #e77878;
+    border: 1px solid transparent;
+    border-radius: 100px;
 }
 
 body::-webkit-scrollbar-track {
@@ -25,4 +27,12 @@ html {
 
 .text-blue {
     color: #4949d8;
+}
+
+.project-item p {
+    width: 400px;
+}
+
+.project-item {
+    width: 400px;
 }
