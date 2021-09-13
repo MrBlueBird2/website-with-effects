@@ -12,7 +12,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-    background: #b8b0b0;
+    background: transparent;
 }
 
 ::selection {
@@ -21,4 +21,8 @@ body::-webkit-scrollbar-track {
 
 html {
     display: block;
+}
+
+.text-blue {
+    color: #4949d8;
 }
