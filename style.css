@@ -140,3 +140,7 @@ html {
 #slider-change {
     display: none;
 }
+
+.width-c {
+    width: 900px;
+}
