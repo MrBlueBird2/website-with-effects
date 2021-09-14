@@ -36,3 +36,107 @@ html {
 .project-item {
     width: 400px;
 }
+
+.card {
+    padding: 10px;
+}
+
+.redemins {
+    position: relative;
+}
+
+.card-body {
+    position: relative;
+}
+
+#smp-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:1288px) {
+    .redemins {
+        position: relative;
+        left: 950px;
+    }
+
+    .card-body-x-right {
+        position: relative;
+        left: -300px;
+        /* width: 300px; */
+    }
+}
+
+@media screen and (min-width:1300px) {
+    #smp-btn {
+        margin: 0px 565px;
+        margin-top: 20px;
+    }
+}
+
+#b-slider {
+    width: 400px;
+}
+
+.s-img {
+    opacity: 0.5;
+}
+
+@media screen and (min-width:1300px) {
+    #b-slider {
+        position: relative;
+        left: 470px;
+        top: 5px;
+    }
+}
+
+.portfolio-item {
+    box-shadow: 10px 10px 10px #dbd5d5;
+    padding: 10px;
+    transition: 0.85s;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    box-shadow: -10px 10px 10px #d8d1d1;
+    transition: 0.85s;
+    margin-top: -10px;
+}
+
+.btn-group {
+    padding: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 2px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#slider-1 {
+    display: none;
+}
+
+#slider-2 {
+    display: none;
+}
+
+#slider-3 {
+    display: none;
+}
+
+.card {
+    transition: 0.5s;
+    box-shadow: 10px 10px 10px #b3afaf;
+}
+
+.card:hover {
+    box-shadow: -10px 10px 10px #b3afaf;
+    transition: 0.5s;
+    margin-top: -5px;
+}
+
+#slider-change {
+    display: none;
+}

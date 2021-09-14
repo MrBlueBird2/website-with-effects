@@ -13,11 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://www.pngmart.com/files/14/B-Letter-PNG-Image.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
     <title>Badri vishal - mrbluebird2</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light top-fixed bg-light">
+    <nav class="navbar navbar-light fixed-top bg-light">
         <div class="container-lg">
             <a class="navbar-brand text-danger fw-bold fs-4" href="#">B.V.M.T</a>
             <div class="dropdown">
@@ -61,25 +65,75 @@
         </div>
     </section>
     <section class="internship col-lg-12" id="internship">
-        <div class="container col-lg-12">
-            <h2 class="text-center py-1 fw-bold">Internship</h2>
-            <div class="row intern-item py-2 justify-content-center d-flex">
-                <div class="card" style="width: 19rem;">
-                    <img src="./src/google.png" class="card-img-top" alt="google">
-                    <div class="card-body">
-                        <h5 class="card-title">Google</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-table text-center">
+                        <h2 class="fw-bold mb-5 fw-bold">Internship</h2>
                     </div>
                 </div>
-                <div class="card" style="width: 19rem;">
-                    <img src="./src/redemins.png" class="card-img-top" alt="redeminds">
-                    <div class="card-body">
-                        <h5 class="card-title">Redeminds</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-2">
+                        <img src="./src/google.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer, Date, Anything</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="./src/redemins.png" class="img-fluid rounded-start redemins" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body card-body-x-right">
+                            <h5 class="card-title">Software Engineer, Date, Anything</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
+                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,6 +180,197 @@
                             autem.
                         </p>
                     </div>
+                </div>
+                <hr style="background: transparent;">
+                <hr style="background: transparent;">
+                <div class="d-flex justify-content-center">
+                    <div class="btn-group col-md-1" role="group" aria-label="Basic mixed styles example"
+                        id="slider-change">
+                        <button type="button" class="btn btn-danger" onclick='
+                        const slider1 = document.getElementById("slider-1");
+                        const slider2 = document.getElementById("slider-2");
+                        const slider3 = document.getElementById("slider-3");
+
+                        if (slider1.style.display === "block") {
+                            slider3.style.display = "block";
+                            slider1.style.display = "none";
+                        } else if (slider3.style.display === "block") {
+                            slider2.style.display = "block";
+                            slider3.style.display = "none";
+                        } else if (slider2.style.display === "block") {
+                            slider1.style.display = "block";
+                            slider2.style.display = "none";
+                        }
+                        '>&leftarrow;</button>
+                        <button type="button" class="btn btn-danger" onclick='
+                        const slider1 = document.getElementById("slider-1");
+                        const slider2 = document.getElementById("slider-2");
+                        const slider3 = document.getElementById("slider-3");
+
+                        if (slider1.style.display === "block") {
+                            slider2.style.display = "block";
+                            slider1.style.display = "none";
+                        } else if (slider3.style.display === "block") {
+                            slider1.style.display = "block";
+                            slider3.style.display = "none";
+                        } else if (slider2.style.display === "block") {
+                            slider3.style.display = "block";
+                            slider2.style.display = "none";
+                        }
+                        '>&rightarrow;</button>
+                    </div>
+                </div>
+                <div id="slider-1">
+                    <div class="d-flex justify-content-center">
+                        <div class="hidden-projects" id="hp1">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="row">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div id="slider-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="hidden-projects" id="hp1">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="row">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/redemins.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div id="slider-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="hidden-projects" id="hp1">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="row">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/google.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./src/dummy_img.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <hr style="background: transparent;">
+                <div class="col-md-6" id="smp-btn" tabindex="1">
+                    <button class="btn btn-danger" onclick="
+                    const slider1 = document.getElementById('slider-1')
+                    const smp_btn = document.getElementById('smpb');
+                    const slider_change = document.getElementById('slider-change');
+                    slider_change.style.display = 'block';
+                    slider1.style.display = 'block';
+                    smp_btn.style.display = 'none';
+                    " id="smpb">Show More Projects</button>
                 </div>
             </div>
         </div>
@@ -238,7 +483,8 @@
                     </div>
                 </div>
             </div>
-            <h5 class="justify-content-center d-flex" class="text-dark">Skill 1 Skill 2 Skill 3 Skill 4 Skill 4 Skill 5 Skill 6
+            <h5 class="justify-content-center d-flex" class="text-dark">Skill 1 Skill 2 Skill 3 Skill 4 Skill 4 Skill 5
+                Skill 6
             </h5>
         </div>
     </section>
