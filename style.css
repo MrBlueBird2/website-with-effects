@@ -100,7 +100,7 @@ html {
 .portfolio-item:hover {
     box-shadow: -10px 10px 10px #d8d1d1;
     transition: 0.85s;
-    margin-top: -10px;
+    margin-top: -3px;
 }
 
 .btn-group {
@@ -128,13 +128,13 @@ html {
 
 .card {
     transition: 0.5s;
-    box-shadow: 10px 10px 10px #b3afaf;
+    box-shadow: 10px 10px 10px #dbd5d5;
 }
 
 .card:hover {
-    box-shadow: -10px 10px 10px #b3afaf;
+    box-shadow: -10px 10px 10px #dbd5d5;
     transition: 0.5s;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 #slider-change {
