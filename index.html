@@ -190,19 +190,16 @@
                             
                             if (slider1.style.display === "block") {
                                 $("#slider-1").hide();
-                                $("#slider-3").animate({height: "toggle", display: "block"})
+                                $("#slider-3").animate({width: "show", display: "block"})
                             } else if (slider2.style.display === "block") {
                                 $("#slider-2").hide()
-                                $("#slider-1").animate({height: "toggle", display: "block"})
+                                $("#slider-1").animate({width: "show", display: "block"})
                             } else if (slider3.style.display === "block") {
                                 $("#slider-3").hide()
-                                $("#slider-2").animate({height: "toggle", display: "block"})
+                                $("#slider-2").animate({width: "toggle", display: "block"})
                             }
                         })
                         '>&leftarrow;</button>
-                        <script>
-                            const x = 0;
-                        </script>
                         <button type="button" class="btn btn-danger" onclick='
                         // if (slider1.style.display === "block") {
                             //     slider2.style.display = "block";
@@ -219,21 +216,46 @@
                             const slider1 = document.getElementById("slider-1");
                             const slider2 = document.getElementById("slider-2");
                             const slider3 = document.getElementById("slider-3");
+
                             if (slider1.style.display === "block") {
                                 $("#slider-1").hide()
-                                $("#slider-2").animate({left: "+=50", height: "toggle", display: "block"})
+                                $("#slider-2").animate({width: "toggle", display: "block"})
                             } else if (slider2.style.display === "block") {
                                 $("#slider-2").hide()
-                                $("#slider-3").animate({left: "+=50", height: "toggle", display: "block"})
+                                $("#slider-3").animate({width: "toggle", display: "block"})
                             } else if (slider3.style.display === "block") {
                                 $("#slider-3").hide()
-                                $("#slider-1").animate({left: "+=50", height: "toggle", display: "block"})
+                                $("#slider-1").animate({width: "toggle", display: "block"})
                             }
                         })
                         '>&rightarrow;</button>
+                        <script>
+                            $(document).scroll(function () {
+
+                                const intern = document.getElementById("internship");
+                                const projects = document.getElementById("projects");
+
+                                var myScrollFunc = function () {
+                                    var y = window.scrollY;
+                                    if (y >= 100) {
+                                        intern.className = "internship show"
+                                    } else {
+                                        intern.className = "internship hide"
+                                    }
+
+                                    if (y >= 1100) {
+                                        projects.className = "projects show"
+                                    } else {
+                                        projects.className = "projects hide"
+                                    }
+                                };
+
+                                window.addEventListener("scroll", myScrollFunc);
+                            });
+                        </script>
                     </div>
                 </div>
-                <div id="slider-1">
+                <div id="slider-1" class="slider-1">
                     <div class="d-flex justify-content-center">
                         <div class="hidden-projects" id="hp1">
                             <div class="col-md-6 col-lg-12">
@@ -280,7 +302,7 @@
                     </div>
                     <br>
                 </div>
-                <div id="slider-2">
+                <div id="slider-2" class="slider-1">
                     <div class="d-flex justify-content-center">
                         <div class="hidden-projects" id="hp1">
                             <div class="col-md-6 col-lg-12">
@@ -327,7 +349,7 @@
                     </div>
                     <br>
                 </div>
-                <div id="slider-3">
+                <div id="slider-3" class="slider-1">
                     <div class="d-flex justify-content-center">
                         <div class="hidden-projects" id="hp1">
                             <div class="col-md-6 col-lg-12">
@@ -385,9 +407,9 @@
                     // smp_btn.style.display = 'none';
 
                     $(document).ready(function () {
-                        $('#slider-change').animate({height: 'toggle'});
+                        $('#slider-change').animate({width: 'toggle'}, 'slow');
                         $('#smpb').hide();
-                        $('#slider-1').animate({height: 'toggle'});
+                        $('#slider-1').animate({width: 'toggle'}, 'slow');
                     })
                     " id="smpb">Show More Projects</button>
                 </div>
