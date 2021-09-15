@@ -93,13 +93,13 @@ html {
 .portfolio-item {
     box-shadow: 10px 10px 10px #dbd5d5;
     padding: 10px;
-    transition: 0.85s;
+    transition: 0.3s;
     text-align: center;
 }
 
 .portfolio-item:hover {
     box-shadow: -10px 10px 10px #d8d1d1;
-    transition: 0.85s;
+    transition: 0.3s;
     margin-top: -3px;
 }
 
@@ -127,20 +127,16 @@ html {
 }
 
 .card {
-    transition: 0.5s;
+    transition: 0.3s;
     box-shadow: 10px 10px 10px #dbd5d5;
 }
 
 .card:hover {
     box-shadow: -10px 10px 10px #dbd5d5;
-    transition: 0.5s;
+    transition: 0.3s;
     margin-top: -3px;
 }
 
 #slider-change {
     display: none;
-}
-
-.width-c {
-    width: 900px;
 }

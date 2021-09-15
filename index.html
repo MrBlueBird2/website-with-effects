@@ -75,7 +75,7 @@
             </div>
             <div class="card mb-3" style="max-width: 100%;">
                 <div class="row g-0">
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <img src="./src/google.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
@@ -105,38 +105,34 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-3">
-                        <img src="./src/redemins.png" class="img-fluid rounded-start redemins" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body card-body-x-right">
-                            <h5 class="card-title">Software Engineer, Date, Anything</h5>
-                            <p class="card-text">
-                                <ul>
-                                    <li class="width-c">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
-                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
-                                    </li>
-                                    <li class="width-c">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
-                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
-                                    </li>
-                                    <li class="width-c">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
-                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
-                                    </li>
-                                    <li class="width-c">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odio
-                                        sunt quam accusantium hic labore adipisci dolorum sequi distinctio dicta.
-                                    </li>
-                                </ul>
-                            </p>
+            <!-- <div class="row">
+                <div class="col-lg-12"> -->
+                    <div class="card" style="max-width: 100%;">
+                        <div class="row card-body">
+                            <div class="col-sm-9">
+                                <h5 class="card-title">Software Engineer, Date, Anything</h5>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur facilis
+                                            doloremque odit nulla dolor provident laborum, eaque quidem perferendis.
+                                            Repellat.</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur facilis
+                                            doloremque odit nulla dolor provident laborum, eaque quidem perferendis.
+                                            Repellat.</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur facilis
+                                            doloremque odit nulla dolor provident laborum, eaque quidem perferendis.
+                                            Repellat.</li>
+                                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur facilis
+                                            doloremque odit nulla dolor provident laborum, eaque quidem perferendis.
+                                            Repellat.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <img class="col-sm-3" src="./src/redemins.png" alt="redeminds" />
                         </div>
                     </div>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
         </div>
     </section>
     <section class="projects py-5" id="projects">
@@ -187,36 +183,51 @@
                     <div class="btn-group col-md-1" role="group" aria-label="Basic mixed styles example"
                         id="slider-change">
                         <button type="button" class="btn btn-danger" onclick='
-                        const slider1 = document.getElementById("slider-1");
-                        const slider2 = document.getElementById("slider-2");
-                        const slider3 = document.getElementById("slider-3");
-
-                        if (slider1.style.display === "block") {
-                            slider3.style.display = "block";
-                            slider1.style.display = "none";
-                        } else if (slider3.style.display === "block") {
-                            slider2.style.display = "block";
-                            slider3.style.display = "none";
-                        } else if (slider2.style.display === "block") {
-                            slider1.style.display = "block";
-                            slider2.style.display = "none";
-                        }
+                        $(document).ready(function () {
+                            const slider1 = document.getElementById("slider-1");
+                            const slider2 = document.getElementById("slider-2");
+                            const slider3 = document.getElementById("slider-3");
+                            
+                            if (slider1.style.display === "block") {
+                                $("#slider-1").hide();
+                                $("#slider-3").animate({height: "toggle", display: "block"})
+                            } else if (slider2.style.display === "block") {
+                                $("#slider-2").hide()
+                                $("#slider-1").animate({height: "toggle", display: "block"})
+                            } else if (slider3.style.display === "block") {
+                                $("#slider-3").hide()
+                                $("#slider-2").animate({height: "toggle", display: "block"})
+                            }
+                        })
                         '>&leftarrow;</button>
                         <button type="button" class="btn btn-danger" onclick='
-                        const slider1 = document.getElementById("slider-1");
-                        const slider2 = document.getElementById("slider-2");
-                        const slider3 = document.getElementById("slider-3");
-
-                        if (slider1.style.display === "block") {
-                            slider2.style.display = "block";
-                            slider1.style.display = "none";
-                        } else if (slider3.style.display === "block") {
-                            slider1.style.display = "block";
-                            slider3.style.display = "none";
-                        } else if (slider2.style.display === "block") {
-                            slider3.style.display = "block";
-                            slider2.style.display = "none";
-                        }
+                        
+                        // if (slider1.style.display === "block") {
+                            //     slider2.style.display = "block";
+                        //     slider1.style.display = "none";
+                        // } else if (slider3.style.display === "block") {
+                            //     slider1.style.display = "block";
+                            //     slider3.style.display = "none";
+                        // } else if (slider2.style.display === "block") {
+                            //     slider3.style.display = "block";
+                            //     slider2.style.display = "none";
+                            // }
+                            
+                        $(document).ready(function () {
+                            const slider1 = document.getElementById("slider-1");
+                            const slider2 = document.getElementById("slider-2");
+                            const slider3 = document.getElementById("slider-3");
+                            if (slider1.style.display === "block") {
+                                $("#slider-1").hide()
+                                $("#slider-2").animate({left: "+=50", height: "toggle", display: "block"})
+                            } else if (slider2.style.display === "block") {
+                                $("#slider-2").hide()
+                                $("#slider-3").animate({left: "+=50", height: "toggle", display: "block"})
+                            } else if (slider3.style.display === "block") {
+                                $("#slider-3").hide()
+                                $("#slider-1").animate({left: "+=50", height: "toggle", display: "block"})
+                            }
+                        })
                         '>&rightarrow;</button>
                     </div>
                 </div>
@@ -367,11 +378,45 @@
                     const slider1 = document.getElementById('slider-1')
                     const smp_btn = document.getElementById('smpb');
                     const slider_change = document.getElementById('slider-change');
-                    slider_change.style.display = 'block';
-                    slider1.style.display = 'block';
-                    smp_btn.style.display = 'none';
+                    // slider_change.style.display = 'block';
+                    // slider1.style.display = 'block';
+                    // smp_btn.style.display = 'none';
+
+                    $(document).ready(function () {
+                        $('#slider-change').animate({height: 'toggle'});
+                        $('#smpb').hide();
+                        $('#slider-1').animate({height: 'toggle'});
+                    })
                     " id="smpb">Show More Projects</button>
                 </div>
+                <script>
+                    $(document).ready(function () {
+                        const slider1 = document.getElementById("slider-1");
+                        const slider2 = document.getElementById("slider-2");
+                        const slider3 = document.getElementById("slider-3");
+                        setInterval(function () {
+                            if (slider1.style.display === "block") {
+                                $("#slider-1").hide()
+                                $("#slider-2").animate({
+                                    display: "block",
+                                    height: "toggle"
+                                })
+                            } else if (slider2.style.display === "block") {
+                                $("#slider-2").hide()
+                                $("#slider-3").animate({
+                                    display: "block",
+                                    height: "toggle"
+                                })
+                            } else if (slider3.style.display === "block") {
+                                $("#slider-3").hide()
+                                $("#slider-1").animate({
+                                    display: "block",
+                                    height: "toggle"
+                                })
+                            }
+                        }, 10000);
+                    })
+                </script>
             </div>
         </div>
     </section>
