@@ -45,8 +45,8 @@
             <div class="row align-items-center align-content-center">
                 <div class="col md-6 mt-5 mt-md-0">
                     <div class="home-img text-center">
-                        <img src="https://avatars.githubusercontent.com/u/79777609?v=4" alt="profile_img"
-                            class="rounded-circle" style="min-width: 100%; width: 250px;" />
+                        <img src="./src/profile.jpeg" alt="profile_img" class="rounded-circle"
+                            style="min-width: 100%; width: 250px;" />
                     </div>
                 </div>
                 <div class="col md-6 mt-5 mt-md-0 order-md-first">
@@ -145,40 +145,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-                        </p>
-                    </div>
-                </div>
-                <hr style="background: transparent;">
-                <hr style="background: transparent;">
                 <div class="d-flex justify-content-center">
                     <div class="btn-group col-md-1" role="group" aria-label="Basic mixed styles example"
                         id="slider-change">
@@ -234,6 +200,9 @@
 
                                 const intern = document.getElementById("internship");
                                 const projects = document.getElementById("projects");
+                                const worke = document.getElementById("experience");
+                                const achievements = document.getElementById("achievements");
+                                const skills = document.getElementById("skills");
 
                                 var myScrollFunc = function () {
                                     var y = window.scrollY;
@@ -247,6 +216,24 @@
                                         projects.className = "projects show"
                                     } else {
                                         projects.className = "projects hide"
+                                    }
+
+                                    if (y >= 1770) {
+                                        worke.className = "experience show"
+                                    } else {
+                                        worke.className = "experience hide"
+                                    }
+
+                                    if (y >= 2150) {
+                                        achievements.className = "achievements show"
+                                    } else {
+                                        achievements.className = "achievements hide"
+                                    }
+
+                                    if (y >= 2450) {
+                                        skills.className = "skills show"
+                                    } else {
+                                        skills.className = "skills hide"
                                     }
                                 };
 
@@ -397,9 +384,41 @@
                     <br>
                 </div>
                 <hr style="background: transparent;">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
+                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
+                            autem.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
+                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
+                            autem.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
+                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
+                        <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
+                            autem.
+                        </p>
+                    </div>
+                </div>
                 <div class="col-md-6" id="smp-btn" tabindex="1">
                     <button class="btn btn-danger" onclick="
-                    const slider1 = document.getElementById('slider-1')
+                    const slider1 = document.getElementById('slider-1');
                     const smp_btn = document.getElementById('smpb');
                     const slider_change = document.getElementById('slider-change');
                     // slider_change.style.display = 'block';

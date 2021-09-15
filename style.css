@@ -194,3 +194,18 @@ html {
         left: 100%;
     }
 }
+
+#experience {
+    z-index: 1;
+    transition: all 1s;
+}
+
+#achievements {
+    z-index: 1;
+    transition: all 1s;
+}
+
+#skills {
+    z-index: 1;
+    transition: all 1s;
+}
