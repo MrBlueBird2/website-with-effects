@@ -143,12 +143,12 @@ html {
 
 .hide {
     opacity: 0;
-    left: -100%;
+    /* left: -100%; */
 }
 
 .show {
     opacity: 1;
-    left: 0;
+    /* left: 0; */
 }
 
 .internship {
@@ -212,4 +212,16 @@ html {
 
 body {
     overflow-x: hidden;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    border: 1px solid transparent;
+    right: 20px;
+    z-index: 99;
+    outline: none;
+    border-radius: 100%;
+    transition: all 1s;
+    z-index: 1;
 }

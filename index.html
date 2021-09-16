@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -64,6 +65,10 @@
             </div>
         </div>
     </section>
+    <button class="btn btn-danger" id="scroll-to-top" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Scroll to Top" onclick="
+        document.documentElement.scrollTop = 0;
+        ">&uparrow;</button>
     <section class="internship col-lg-12" id="internship">
         <div class="container-lg py-4">
             <div class="row justify-content-center">
@@ -198,18 +203,31 @@
                         <script>
                             $(document).scroll(function () {
 
-                                const intern = document.getElementById("internship");
-                                const projects = document.getElementById("projects");
-                                const worke = document.getElementById("experience");
-                                const achievements = document.getElementById("achievements");
-                                const skills = document.getElementById("skills");
+                                // const intern = document.getElementById("internship");
+                                // const projects = document.getElementById("projects");
+                                // const worke = document.getElementById("experience");
+                                // const achievements = document.getElementById("achievements");
+                                // const skills = document.getElementById("skills");
 
                                 var myScrollFunc = function () {
+                                    const intern = document.getElementById("internship");
+                                    const projects = document.getElementById("projects");
+                                    const worke = document.getElementById("experience");
+                                    const achievements = document.getElementById("achievements");
+                                    const skills = document.getElementById("skills");
+                                    const stt = document.getElementById("scroll-to-top");
+
                                     var y = window.scrollY;
                                     if (y >= 100) {
                                         intern.className = "internship show"
                                     } else {
                                         intern.className = "internship hide"
+                                    }
+
+                                    if (y >= 110) {
+                                        stt.className = "btn btn-danger show"
+                                    } else {
+                                        stt.className = "scroll-to-top hide"
                                     }
 
                                     if (y >= 1100) {
@@ -224,13 +242,13 @@
                                         worke.className = "experience hide"
                                     }
 
-                                    if (y >= 2150) {
+                                    if (y >= 2050) {
                                         achievements.className = "achievements show"
                                     } else {
                                         achievements.className = "achievements hide"
                                     }
 
-                                    if (y >= 2450) {
+                                    if (y >= 2055) {
                                         skills.className = "skills show"
                                     } else {
                                         skills.className = "skills hide"
@@ -384,36 +402,46 @@
                     <br>
                 </div>
                 <hr style="background: transparent;">
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-
-                        </p>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-
-                        </p>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item">
-                        <img src="./src/dummy_img.png" alt="portfolio_item" class="w-100">
-                        <h3 class="fw-bold fs-5 my-2">Project Name</h3>
-                        <p class="text-muted">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam id iure dolores. Quo, eum
-                            autem.
-                        </p>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6" id="smp-btn" tabindex="1">
@@ -516,7 +544,7 @@
         </div>
     </section>
     <section class="achievements py-5" id="achievements">
-        <div class="container-lg py-4">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-table text-center">
@@ -525,45 +553,50 @@
                 </div>
             </div>
             <div class="row">
-                <div class="mt-5 mt-md-0">
-                    <div class="skill-item mb-4">
-                        <h3 class="fs-5">Achievement Name</h3>
-                        <p class="text-muted">Rating:Your Rating</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 67.35%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="skill-item mb-4">
-                        <h3 class="fs-5">Achievement Name</h3>
-                        <p class="text-muted">Rating:Your Rating</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 54.35%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="skill-item mb-4">
-                        <h3 class="fs-5">Achievement Name</h3>
-                        <p class="text-muted">Rating:Your Rating</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 57.35%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="skill-item mb-4">
-                        <h3 class="fs-5">Achievement Name</h3>
-                        <p class="text-muted">Rating:Your Rating</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 23.35%"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="skills py-5" id="skills">
-        <div class="container-lg py-4">
+        <div class="container-lg py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-table text-center">
@@ -571,8 +604,8 @@
                     </div>
                 </div>
             </div>
-            <h5 class="justify-content-center d-flex" class="text-dark">Skill 1 Skill 2 Skill 3 Skill 4 Skill 4 Skill 5
-                Skill 6
+            <h5 class="justify-content-center d-flex" class="text-dark">
+                HTML CSS JS Python 3 C++ Java jQuery
             </h5>
         </div>
     </section>
