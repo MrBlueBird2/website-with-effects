@@ -191,7 +191,7 @@ html {
     0% {
         opacity: 0;
         position: relative;
-        left: 100%;
+        left: -100%;
     }
 }
 
@@ -223,5 +223,18 @@ body {
     outline: none;
     border-radius: 100%;
     transition: all 1s;
-    z-index: 1;
+    /* z-index: 1; */
+}
+
+#smpb {
+    display: block;
+}
+
+#hp12kfmr {
+    display: none;
+}
+
+#left-align-css .card {
+    margin: 0 5px;
+    border-radius: 100px;
 }

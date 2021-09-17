@@ -402,7 +402,7 @@
                     <br>
                 </div>
                 <hr style="background: transparent;">
-                <div class="row">
+                <!-- <div class="row" id="hp12kfmr">
                     <div class="col-sm-3">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
@@ -443,8 +443,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6" id="smp-btn" tabindex="1">
+                </div> -->
+                <script>
+                    $(document).ready(function () {
+                        $('#slider-change').animate({
+                            width: 'toggle'
+                        }, 'slow');
+                        $('#smpb').hide();
+                        $('#slider-1').animate({
+                            width: 'toggle'
+                        }, 'slow');
+                    })
+                </script>
+                <!-- <div class="col-md-6" id="smp-btn" tabindex="1">
                     <button class="btn btn-danger" onclick="
                     const slider1 = document.getElementById('slider-1');
                     const smp_btn = document.getElementById('smpb');
@@ -454,12 +465,10 @@
                     // smp_btn.style.display = 'none';
 
                     $(document).ready(function () {
-                        $('#slider-change').animate({width: 'toggle'}, 'slow');
-                        $('#smpb').hide();
-                        $('#slider-1').animate({width: 'toggle'}, 'slow');
+                        $('#hp12kfmr').animate({width: 'slow'}, 'slow');
                     })
                     " id="smpb">Show More Projects</button>
-                </div>
+                </div> -->
                 <!-- <script>
                     $(document).ready(function () {
                         const slider1 = document.getElementById("slider-1");
@@ -604,8 +613,75 @@
                     </div>
                 </div>
             </div>
-            <h5 class="justify-content-center d-flex" class="text-dark">
-                HTML CSS JS Python 3 C++ Java jQuery
+            <h5 class="justify-content-center d-flex" id="left-align-css">
+                <div class="card" style="
+                background-color: #181123;">
+                    <div class="card-body">
+                        <div class="card-title" style="
+                        background-color: red;
+                        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+                        background-size: 100%;
+                        background-repeat: repeat;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
+                        ">
+                            HTML
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="
+                background-color: #181123;">
+                    <div class="card-body">
+                        <div class="card-title" style="
+                        background-color: red;
+                        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+                        background-size: 100%;
+                        background-repeat: repeat;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
+                        ">
+                            C++
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="
+                background-color: #181123;">
+                    <div class="card-body">
+                        <div class="card-title" style="
+                        background-color: red;
+                        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+                        background-size: 100%;
+                        background-repeat: repeat;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
+                        ">
+                            Python 3
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="
+                background-color: #181123;">
+                    <div class="card-body">
+                        <div class="card-title" style="
+                        background-color: red;
+                        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+                        background-size: 100%;
+                        background-repeat: repeat;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-background-clip: text;
+                        -moz-text-fill-color: transparent;
+                        ">
+                            jQuery
+                        </div>
+                    </div>
+                </div>
             </h5>
         </div>
     </section>
