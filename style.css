@@ -238,3 +238,7 @@ body {
     margin: 0 5px;
     border-radius: 100px;
 }
+
+#left-align-css .card:hover {
+    margin-top: -5px;
+}
