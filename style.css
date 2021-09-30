@@ -91,14 +91,12 @@ html {
 }
 
 .portfolio-item {
-    box-shadow: 10px 10px 10px #dbd5d5;
     padding: 10px;
     transition: 0.3s;
     text-align: center;
 }
 
 .portfolio-item:hover {
-    box-shadow: -10px 10px 10px #d8d1d1;
     transition: 0.3s;
     margin-top: -3px;
 }
@@ -128,11 +126,9 @@ html {
 
 .card {
     transition: 0.3s;
-    box-shadow: 10px 10px 10px #dbd5d5;
 }
 
 .card:hover {
-    box-shadow: -10px 10px 10px #dbd5d5;
     transition: 0.3s;
     margin-top: -3px;
 }
@@ -241,4 +237,246 @@ body {
 
 #left-align-css .card:hover {
     margin-top: -5px;
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin: 25px;
+    transition: 0.85s;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #8696AD;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::selection {
+    background: #4560F060;
+}
+
+html {
+    display: block;
+}
+
+h2 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    color: #8696AD;
+}
+
+h4 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #f89898 3.98%, rgba(253, 141, 244, 0.802) 35.29%, #b273e6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    color: #8696AD;
+}
+
+h1 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+}
+
+h6 {
+    color: #8696AD;
+}
+
+.btn {
+    padding: 10px;
+}
+
+p {
+    color: #8696AD;
+}
+
+#dd-m li a:hover {
+    transition: 0.85s;
+    background: black;
+}
+
+#dd-m li a {
+    transition: 0.85s;
+}
+
+.custom-color-not-b {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input[type=text] {
+    background: #37393E;
+}
+
+textarea[type=text] {
+    background: #37393E;
+}
+
+.random-red {
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin: 25px;
+    transition: 0.85s;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #8696AD;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::selection {
+    background: #4560F060;
+}
+
+html {
+    display: block;
+}
+
+h2 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    color: #8696AD;
+}
+
+h4 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #f89898 3.98%, rgba(253, 141, 244, 0.802) 35.29%, #b273e6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+h1 {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+}
+
+h6 {
+    color: #8696AD;
+}
+
+.btn {
+    padding: 10px;
+}
+
+p {
+    color: #8696AD;
+}
+
+#dd-m li a:hover {
+    transition: 0.85s;
+    background: black;
+    color: white;
+}
+
+#dd-m li a {
+    transition: 0.85s;
+    color: white;
+}
+
+.custom-color-not-b {
+    display: inline-block;
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input[type=text] {
+    background: #37393E;
+}
+
+textarea[type=text] {
+    background: #37393E;
+}
+
+.random-red {
+    background: linear-gradient(93.05deg, #EF9797 3.98%, rgba(206, 126, 199, 0.801616) 35.29%, #A364D6 68.78%,
+            #A1D0F9 97.44%);
+}
+
+li {
+    color: #8696AD;
 }
